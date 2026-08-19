@@ -1,0 +1,20 @@
+# Copyrighted game material - never commit (APK binary, extracted assets, decompiled/reversed code)
+/apk/
+/apk_desmantelada/
+
+# Legacy working folder (superseded by data/)
+/reports/
+
+# Local tool/session config
+/.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (server, once scaffolded)
+node_modules/
+dist/
+.env
