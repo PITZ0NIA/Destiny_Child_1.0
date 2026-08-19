@@ -17,8 +17,10 @@ first pass; the local server itself hasn't been built yet.
 - [x] Recover production/QA server hostnames from embedded client strings
 - [x] Source a character/equipment/item stat dataset from the community wiki
       (`data/wiki/`)
-- [ ] Design the local server's database schema (`docs/database-schema.md`)
-- [ ] Scaffold the local server (auth, session, master-data endpoints)
+- [x] Design the local server's database schema (`docs/database-schema.md`)
+- [x] Scaffold the local server (init, login/session, catalog, roster —
+      see `server/README.md`)
+- [ ] Endpoints for actually granting/leveling characters, teams, gacha
 - [ ] Point a client build at the local server and validate login
 - [ ] Fill remaining protocol gaps (exact JSON shapes, any request signing)
 
@@ -36,7 +38,7 @@ scripts/         Tools used to extract data (not game content itself)
   scrape_wiki.py          scrapes the community wiki via its MediaWiki API
 data/wiki/       Character/equipment/item stats scraped from the community
                  wiki (CC BY-SA, see docs/data-sources.md)
-server/          The local server implementation (not started yet)
+server/          Local server (Python/FastAPI/SQLite) - see server/README.md
 ```
 
 Not in this repo (kept local only — see `.gitignore` and
